@@ -1,0 +1,12 @@
+#!/Users/chongtao/PycharmProjects/Socket/venv/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'socketpy==0.3.4','console_scripts','socketpy'
+__requires__ = 'socketpy==0.3.4'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('socketpy==0.3.4', 'console_scripts', 'socketpy')()
+    )
